@@ -11,6 +11,7 @@ const [teamMember, setTeamMember] = useState([{
   role: 'Web developer'
 }])
 
+
 const addNewMember = member => {
   const newMember = {
     id: Date.now(), 
@@ -24,6 +25,7 @@ const addNewMember = member => {
   return (
     <div className="App">
       <h1>Team Builder</h1>
+      
       <Form addNewMember={addNewMember}/>
       <FormResults teamMember={teamMember}/>
     </div>
